@@ -33,13 +33,13 @@
 		</Item>
 		<Item Name="resource" Type="Folder">
 			<Item Name="background.png" Type="Document" URL="../data/background.png"/>
-			<Item Name="bgm.wav" Type="Document" URL="../data/bgm.wav"/>
 			<Item Name="boom.wav" Type="Document" URL="../data/boom.wav"/>
 			<Item Name="clear.wav" Type="Document" URL="../data/clear.wav"/>
 			<Item Name="gameover.png" Type="Document" URL="../data/gameover.png"/>
 			<Item Name="gameover.wav" Type="Document" URL="../data/gameover.wav"/>
 			<Item Name="gameover_.wav" Type="Document" URL="../data/gameover_.wav"/>
 			<Item Name="move.wav" Type="Document" URL="../data/move.wav"/>
+			<Item Name="op.wav" Type="Document" URL="../data/op.wav"/>
 			<Item Name="tetris-128.ico" Type="Document" URL="../data/tetris-128.ico"/>
 		</Item>
 		<Item Name="Utils" Type="Folder">
@@ -51,11 +51,13 @@
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
+				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="_Get Sound Error From Return Value.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_Get Sound Error From Return Value.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="Bit-array To Byte-array.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/Bit-array To Byte-array.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Check Path.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Path.vi"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Create Mask By Alpha.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Create Mask By Alpha.vi"/>
 				<Item Name="Directory of Top Level VI.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Directory of Top Level VI.vi"/>
 				<Item Name="Draw Flattened Pixmap.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Draw Flattened Pixmap.vi"/>
@@ -65,6 +67,7 @@
 				<Item Name="FixBadRect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/pictutil.llb/FixBadRect.vi"/>
 				<Item Name="imagedata.ctl" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/imagedata.ctl"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
+				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Path To Command Line String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Path To Command Line String.vi"/>
 				<Item Name="PathToUNIXPathString.vi" Type="VI" URL="/&lt;vilib&gt;/Platform/CFURL.llb/PathToUNIXPathString.vi"/>
@@ -73,6 +76,9 @@
 				<Item Name="Set Pen State.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Set Pen State.vi"/>
 				<Item Name="Sound Output Task ID.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Task ID.ctl"/>
 				<Item Name="Sound Output Wait.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sound Output Wait.vi"/>
+				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
+				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
+				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="lvsound2.dll" Type="Document" URL="/&lt;resource&gt;/lvsound2.dll"/>
 		</Item>
@@ -93,7 +99,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{68142573-BAAA-405B-B049-18909411024D}</Property>
-				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_version.build" Type="Int">18</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Tetris.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/TetrisVI/Tetris.exe</Property>
@@ -102,46 +108,46 @@
 				<Property Name="Destination[1].destName" Type="Str">支持目录</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/TetrisVI/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[0]" Type="Str">{749A9ED4-CE81-4C85-80C4-85F0FD3C86B9}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[1]" Type="Str">{F39B01FB-FA94-42B8-9AE2-EEDE6D816C0A}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[10]" Type="Str">{086F8400-2B47-42BD-9ED6-D0AE20389E94}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[11]" Type="Str">{A16BA557-DEE4-4F66-810F-E02EAD4A8500}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[12]" Type="Str">{6709E78B-E87C-40C5-89F2-A316CF236955}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[13]" Type="Str">{242FA284-A0DA-48D5-AF57-C425F6E030FD}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[14]" Type="Str">{018B85AF-4835-48E0-B16C-AD24A090A5C7}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[15]" Type="Str">{0B771BE1-1230-4444-9F05-349AE5638DD1}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[16]" Type="Str">{8264C2AC-9EA9-4E07-AFA9-27CC6D96B86F}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[2]" Type="Str">{F8A5674D-1AE9-4AA1-AA8D-BFD8575642DA}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[3]" Type="Str">{35BE231C-708E-4E71-86AD-A98D0294948C}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[4]" Type="Str">{8E0F0238-5914-4F83-8BDE-B60A2A0C71AE}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[5]" Type="Str">{B5975F37-D446-4CD6-A4C9-2F3016682742}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[6]" Type="Str">{8AF8B672-0D8F-4B85-B04E-4FA9AB100EB8}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[7]" Type="Str">{4C003FE5-4815-42C6-A56A-62FB2C5E1783}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[8]" Type="Str">{686E540A-2991-43F0-A747-5EDF00AFE975}</Property>
-				<Property Name="Exe_actXinfo_enumCLSID[9]" Type="Str">{6C12A6FB-2328-4DE2-B474-5D8A3B0D4603}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[0]" Type="Str">{B53FCDD8-CF50-4D4A-A1CD-780F746AA974}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[1]" Type="Str">{4DDCEC1F-B86B-4413-8366-58C496565F8B}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[10]" Type="Str">{31CDD1D5-59DB-49DC-B733-D9E3BD151B3A}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[11]" Type="Str">{041B2D27-AC76-40C5-81A1-0DF3391AD122}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[12]" Type="Str">{CF3753DE-D128-40A0-B9F6-E3FF3C0D023A}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[13]" Type="Str">{6D87C247-434D-4CC0-8F4C-BBA9D80E7AE2}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[14]" Type="Str">{1BE02DDB-C83F-454A-82C4-BB10C39CF1B5}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[15]" Type="Str">{2EBBDAE7-D06E-45FB-B9F9-E3CBF7DBF603}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[16]" Type="Str">{55EDE508-649D-485A-9FE4-84E197C11563}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[2]" Type="Str">{005B7FFB-C3A4-4751-9B05-79EF062F4284}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[3]" Type="Str">{808D2CC3-C2EF-42A2-A978-4CA668FEB178}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[4]" Type="Str">{112DB6BE-3972-4900-8B78-1612FC4D0EE6}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[5]" Type="Str">{23E325DF-4D88-43A2-8D94-7778D40322FA}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[6]" Type="Str">{6E1C1D46-2557-4717-B80B-F88D1C7BA79B}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[7]" Type="Str">{4843BA17-3785-428B-8455-59DAFAFFE89A}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[8]" Type="Str">{F8A2998C-7331-4221-8BA2-E95A88670061}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[9]" Type="Str">{5C49217E-C23A-4BED-9C01-D1690197DCCA}</Property>
 				<Property Name="Exe_actXinfo_enumCLSIDsCount" Type="Int">17</Property>
 				<Property Name="Exe_actXinfo_majorVersion" Type="Int">5</Property>
 				<Property Name="Exe_actXinfo_minorVersion" Type="Int">5</Property>
-				<Property Name="Exe_actXinfo_objCLSID[0]" Type="Str">{F9B61214-C552-4D11-AAC7-BDED5050DF9F}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[1]" Type="Str">{60FFE940-798E-44AF-B343-C3189C5EB768}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[10]" Type="Str">{7242306B-C184-43B1-B355-58A57AF61AD1}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[11]" Type="Str">{9238C09D-E73E-4A57-978B-EFDA4638BD44}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[12]" Type="Str">{855DA714-422F-46C9-A3B4-02A0E3C4CAD2}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[13]" Type="Str">{E0EB668E-764D-435B-808D-BB258FEC376E}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[2]" Type="Str">{856DFB2E-B6F3-4041-B545-7D73A3E66983}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[3]" Type="Str">{2CECC709-1274-4511-8345-7E8073BDB151}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[4]" Type="Str">{D83F1B3D-C83E-4644-A3F4-3D4A7A93B9FC}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[5]" Type="Str">{6A275DCF-0A11-463C-BA9B-813768CD2CF7}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[6]" Type="Str">{2DF67006-C4E0-459E-85C8-74E0304D8EBF}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[7]" Type="Str">{7100C2B6-07A8-4965-B87B-30AE44A27058}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[8]" Type="Str">{63F722D8-1440-46DC-985B-F1A466AFE4DB}</Property>
-				<Property Name="Exe_actXinfo_objCLSID[9]" Type="Str">{945A60C1-1AAB-41D4-96DF-576981801311}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[0]" Type="Str">{2149CE74-2897-401B-9438-7144D5C3BC1E}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[1]" Type="Str">{5BBD23A5-703A-4C1F-85FF-3A7E2418D1A7}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[10]" Type="Str">{28E31D84-58F6-425B-BFF9-323BDAF65485}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[11]" Type="Str">{661CBC47-95BE-492E-8814-2181D1B5AD8F}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[12]" Type="Str">{8288292B-66A2-48B7-A95F-2D5913539828}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[13]" Type="Str">{A7F71072-CE0F-45B8-B62B-229FEE60CFA1}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[2]" Type="Str">{5C9495BA-88B7-4002-BCDE-9BABE406660B}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[3]" Type="Str">{4B703EFF-B4BF-4986-8F40-A2BC0C198D36}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[4]" Type="Str">{F52C0DE8-9237-4EFA-952D-DDA01A8C3EFE}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[5]" Type="Str">{656BCEAA-8495-40F1-A887-3D1DF60249E0}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[6]" Type="Str">{DF3F076F-5AAD-4E05-9314-E2D8F1BF1A12}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[7]" Type="Str">{FD872B3C-0819-42AD-B71A-09E0A634C1CD}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[8]" Type="Str">{8113F6A7-9358-46F3-948D-CFA3104175E1}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[9]" Type="Str">{52690287-C770-46BF-82E2-406852AAFAB4}</Property>
 				<Property Name="Exe_actXinfo_objCLSIDsCount" Type="Int">14</Property>
 				<Property Name="Exe_actXinfo_progIDPrefix" Type="Str">Tetris</Property>
 				<Property Name="Exe_actXServerName" Type="Str">Tetris</Property>
-				<Property Name="Exe_actXServerNameGUID" Type="Str"></Property>
+				<Property Name="Exe_actXServerNameGUID" Type="Str">{5C35CDBF-D905-467C-B784-9A97A403226D}</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/我的电脑/resource/tetris-128.ico</Property>
-				<Property Name="Source[0].itemID" Type="Str">{AA18CC43-A3B3-4D19-AA51-CAC5C62EB5A7}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{6A266BC9-1F93-4C61-93B7-80B82DC5452E}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/我的电脑/main.vi</Property>

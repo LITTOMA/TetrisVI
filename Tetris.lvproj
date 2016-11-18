@@ -37,7 +37,6 @@
 			<Item Name="clear.wav" Type="Document" URL="../data/clear.wav"/>
 			<Item Name="gameover.png" Type="Document" URL="../data/gameover.png"/>
 			<Item Name="gameover.wav" Type="Document" URL="../data/gameover.wav"/>
-			<Item Name="gameover_.wav" Type="Document" URL="../data/gameover_.wav"/>
 			<Item Name="move.wav" Type="Document" URL="../data/move.wav"/>
 			<Item Name="op.wav" Type="Document" URL="../data/op.wav"/>
 			<Item Name="tetris-128.ico" Type="Document" URL="../data/tetris-128.ico"/>
@@ -47,6 +46,7 @@
 			<Item Name="Draw.vi" Type="VI" URL="../Draw.vi"/>
 			<Item Name="GenBlock.vi" Type="VI" URL="../GenBlock.vi"/>
 			<Item Name="Merge.vi" Type="VI" URL="../Merge.vi"/>
+			<Item Name="SizesofArray.vi" Type="VI" URL="../SizesofArray.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
@@ -99,7 +99,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{68142573-BAAA-405B-B049-18909411024D}</Property>
-				<Property Name="Bld_version.build" Type="Int">18</Property>
+				<Property Name="Bld_version.build" Type="Int">26</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Tetris.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/TetrisVI/Tetris.exe</Property>

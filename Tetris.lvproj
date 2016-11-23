@@ -80,7 +80,7 @@
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
-			<Item Name="lvsound2.dll" Type="Document" URL="/&lt;resource&gt;/lvsound2.dll"/>
+			<Item Name="lvsound2.dll" Type="Document" URL="/&lt;libdir&gt;/resource/lvsound2.dll"/>
 		</Item>
 		<Item Name="程序生成规范" Type="Build">
 			<Item Name="TetrisVI" Type="EXE">
@@ -89,16 +89,15 @@
 				<Property Name="App_INI_GUID" Type="Str">{C69531E5-7B73-48C0-A13B-A5E01BA34B71}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{4996859D-14BB-41E6-9C4A-00A485155D3E}</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{386CA4F4-B8CA-434D-B33C-EBB342A88814}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">TetrisVI</Property>
 				<Property Name="Bld_defaultLanguage" Type="Str">ChineseS</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/TetrisVI</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{68142573-BAAA-405B-B049-18909411024D}</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{065FC6B6-0AC9-4D6B-91C5-E4BAB88629BD}</Property>
 				<Property Name="Bld_version.build" Type="Int">28</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Tetris.exe</Property>
@@ -154,7 +153,6 @@
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
-				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[2].itemID" Type="Ref">/我的电脑/resource</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>

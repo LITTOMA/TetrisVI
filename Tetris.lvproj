@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="16008000">
+<Project Type="Project" LVVersion="14008000">
 	<Item Name="我的电脑" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -99,7 +99,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{68142573-BAAA-405B-B049-18909411024D}</Property>
-				<Property Name="Bld_version.build" Type="Int">28</Property>
+				<Property Name="Bld_version.build" Type="Int">29</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Tetris.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/TetrisVI_LV13/Tetris.exe</Property>
@@ -108,6 +108,42 @@
 				<Property Name="Destination[1].destName" Type="Str">支持目录</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/TetrisVI_LV13/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[0]" Type="Str">{AF7EC0D8-AE1D-4F36-8950-52F5039F52BD}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[1]" Type="Str">{72F58181-03B4-4B91-B5BA-30ABC9A83103}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[10]" Type="Str">{7648CD35-E187-40E0-A2DF-D15B15907B45}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[11]" Type="Str">{61DFB649-5F7F-478D-A24A-CC4AAA1B9429}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[12]" Type="Str">{A69592A9-1B57-40BE-9FD6-3BE6629B8E32}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[13]" Type="Str">{B720628C-A856-44C4-B44A-78871D6D6218}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[14]" Type="Str">{8F5C5865-4628-451D-B710-BC7952C65F85}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[15]" Type="Str">{11469DEC-340A-44B8-86F8-81FECCB1D6D8}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[16]" Type="Str">{B5FF49EF-0C17-47C9-9631-CE2EDF083A5A}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[2]" Type="Str">{47004F1D-D349-44B1-A46C-B4AFD39DEE29}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[3]" Type="Str">{15AF81DC-B557-41F3-8C22-341E93575FFC}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[4]" Type="Str">{6E23A28A-6620-4592-BC32-24E5A20218FD}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[5]" Type="Str">{6E5F7FB6-1736-4778-8533-A3293F36BCAA}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[6]" Type="Str">{9916088A-6CD1-4D3A-8169-DAC173532D39}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[7]" Type="Str">{601A7E34-0806-4387-A70D-CD6C3DCF01B1}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[8]" Type="Str">{2FAC7A38-93F0-4D42-8B1B-36B7DCABC69A}</Property>
+				<Property Name="Exe_actXinfo_enumCLSID[9]" Type="Str">{BCD09CA3-82E5-488B-9BE3-4D534E4E0A88}</Property>
+				<Property Name="Exe_actXinfo_enumCLSIDsCount" Type="Int">17</Property>
+				<Property Name="Exe_actXinfo_majorVersion" Type="Int">5</Property>
+				<Property Name="Exe_actXinfo_minorVersion" Type="Int">5</Property>
+				<Property Name="Exe_actXinfo_objCLSID[0]" Type="Str">{B6139278-CD86-4A27-83E6-29AF0B3594CF}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[1]" Type="Str">{843E4920-DAF8-4689-8757-D3CACFBC4014}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[10]" Type="Str">{1CDA6B37-28D0-41FB-9FBF-1CBB37C90936}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[11]" Type="Str">{C4551B51-B73B-48A9-814C-4591E87FC1C5}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[12]" Type="Str">{0A2EFA45-FA1F-4FFD-BE93-6E951E68FCAB}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[13]" Type="Str">{EB32E232-34E0-4A41-9B36-01641F0AC24A}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[2]" Type="Str">{4BAEAAAD-3469-474B-8532-25DF992AF140}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[3]" Type="Str">{85864784-BD80-4698-843E-D1D44BE12CFC}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[4]" Type="Str">{71E6779F-CE5B-4FC5-A7BF-02C04747571E}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[5]" Type="Str">{67616585-CC1F-44D7-A9B6-BD4969459685}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[6]" Type="Str">{7483ED96-9ACA-473A-A061-BB5D0178BDC1}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[7]" Type="Str">{6AF0DE32-DA6E-43FD-B7B8-08F7BA56048B}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[8]" Type="Str">{4C8201C6-7547-4025-BD3D-0F6A72935F84}</Property>
+				<Property Name="Exe_actXinfo_objCLSID[9]" Type="Str">{85AA66EF-8623-4453-BD79-6140B47AA106}</Property>
+				<Property Name="Exe_actXinfo_objCLSIDsCount" Type="Int">14</Property>
+				<Property Name="Exe_actXinfo_progIDPrefix" Type="Str">Tetris</Property>
 				<Property Name="Exe_actXServerName" Type="Str">Tetris</Property>
 				<Property Name="Exe_actXServerNameGUID" Type="Str">{5C35CDBF-D905-467C-B784-9A97A403226D}</Property>
 				<Property Name="Exe_iconItemID" Type="Ref">/我的电脑/resource/tetris-128.ico</Property>

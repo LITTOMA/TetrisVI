@@ -45,7 +45,10 @@
 			<Item Name="Clear.vi" Type="VI" URL="../Clear.vi"/>
 			<Item Name="Draw.vi" Type="VI" URL="../Draw.vi"/>
 			<Item Name="GenBlock.vi" Type="VI" URL="../GenBlock.vi"/>
+			<Item Name="GetColor.vi" Type="VI" URL="../GetColor.vi"/>
 			<Item Name="Merge.vi" Type="VI" URL="../Merge.vi"/>
+			<Item Name="RandomColor.vi" Type="VI" URL="../RandomColor.vi"/>
+			<Item Name="Shader.vi" Type="VI" URL="../Shader.vi"/>
 			<Item Name="SizesofArray.vi" Type="VI" URL="../SizesofArray.vi"/>
 		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>

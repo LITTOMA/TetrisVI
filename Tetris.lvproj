@@ -162,10 +162,10 @@
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
 				<Property Name="Source[2].type" Type="Str">Container</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">TetrisVI_LV13</Property>
-				<Property Name="TgtF_internalName" Type="Str">TetrisVI_LV13</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">TetrisVI_LV14</Property>
+				<Property Name="TgtF_internalName" Type="Str">TetrisVI_LV14</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright (C) LITTOMA 2016 </Property>
-				<Property Name="TgtF_productName" Type="Str">TetrisVI_LV13</Property>
+				<Property Name="TgtF_productName" Type="Str">TetrisVI_LV14</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{01D9B7A7-8952-4DDE-A281-C4A72022750F}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Tetris.exe</Property>
 			</Item>
